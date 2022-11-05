@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Regular', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+/*header (first text)*/
+
+#first-info .container {
+    margin-top: 67px;
+    max-width: 60vw;
+}
+
+#first-text {
+    margin-top: 16px;
+}
+
+#first-text .title {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 500;
+    color: #444444;
+}
+
+#first-text .description {
+    color: #999999;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+#first-text .contact {
+    font-family: 'Montserrat Medium', sans-serif;
+    color: #444444;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+/*main content*/
+
+#portfolio-items-list {
+    display: grid;
+    max-width: 60vw;
+    margin-top: 127px;
+    grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-item {
+    margin-right: 24px;   
+}
+
+.list-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #999999;
+}
+
+.small-title {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+}
+
+.see-all {
+    font-family: 'Montserrat Medium', sans-serif;
+    text-decoration-line: underline;
+    color: #444444;
+}
+
+.not-ready {
+    color: #999999;
+}
+
+#concept-works {
+    width: 60vw;
+    margin-top: 153px;
+}
+
+.con-list-title {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: #444444;
+}
+
+#works-list {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 264px 264px 264px;
+    gap: 24px;
+}
+
+#experience {
+    margin-top: 128px;
+    width: 60vw;
+}
+
+#experience-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 222px 222px 222px;
+    gap: 48px 66px;
+    margin-top: 23px;
+}
+
+#experience-list .company-name {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #666666;
+}
+
+#experience-list .position {
+    line-height: 26px;
+    color: #666666;
+}
+
+#experience-list .dates {
+    font-size: 14px;
+    color: #666666;
+}
+
+#help-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 128px;
+    width: 60vw;
+}
+
+#help-form .subtitle {
+    color: #999999;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#help-form input {
+    padding: 12px 0;
+    padding-left: 12px;
+    border-radius: 4px;
+    border: 1px solid #E7E7E7;
+    color: #bbbaba
+}
+
+#help-form .msg-input {
+    padding-bottom: 49px;
+}
+
+#help-form a {
+    font-family: 'Montserrat Medium', sans-serif;
+    color: #444444;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+/*footer*/
+
+#page-footer .container {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    color: #999999;
+    width: 80vw;
+}
+
+.social-networks {
+    list-style: none;
+    display: flex;
+}
+
+.social-networks li {
+    margin-right: 48px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 910px) {
+    #works-list {
+        grid-template-columns: 264px 264px;
+    }
+    #concept-works {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #experience {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #experience-list {
+        grid-template-columns: 222px 222px;
+    }
+}
+@media screen and (max-width: 750px) {
+    #page-footer .container {
+        flex-direction: column;
+    }
+    .social-networks {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #works-list {
+        grid-template-columns: 264px;
+    }
+    #concept-works {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #experience {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #experience-list {
+        grid-template-columns: 222px;
+    }
+}
